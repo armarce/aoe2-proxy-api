@@ -31,7 +31,7 @@ def playerInfo(profileId):
 
     playerInfo = data['user']
     playerInfo['coutryCode'] = countryCode
-    playerInfo['flag'] = 'https://flagcdn.com/w20/{}.jpg'.format(countryCode)
+    playerInfo['flag'] = 'https://flagsapi.com/{}/flat/64.png'.format(countryCode.upper())
 
     return playerInfo
 
